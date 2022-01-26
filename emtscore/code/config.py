@@ -17,11 +17,14 @@ parser.add_argument(
 )
 
 # list of coefficients which used
-parser.add_argument("--Ecadonly", type=int, default=-3)
-parser.add_argument("--K8ecad", type=int, default=-2)
-parser.add_argument("--K14", type=int, default=-1)
+parser.add_argument("--Ecadonly", type=int, default=-4)
+parser.add_argument("--K8ecad", type=int, default=-3)
+parser.add_argument("--K8", type=int, default=-2)
+parser.add_argument("--K14", type=int, default=-2)
+parser.add_argument("--Trip", type=int, default=-1)
+parser.add_argument("--K8vim", type=int, default=1)
+parser.add_argument("--K14vim", type=int, default=1)
 parser.add_argument("--Snail", type=int, default=2)
-parser.add_argument("--Trip", type=int, default=1)
 parser.add_argument("--vimonly", type=int, default=3)
 parser.add_argument("--vimzeb", type=int, default=4)
 
