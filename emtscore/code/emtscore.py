@@ -62,7 +62,9 @@ class EMTScore:
         new_s["Ecad only"] = 0
         new_s["K8+ecad"] = 0
         new_s["K14"] = 0
+        new_s["K8"] = 0
         new_s["Trip+"] = 0
+        new_s["K8+vim"] = 0
         new_s["Snail+"] = 0
         new_s["vim+zeb"] = 0
         new_s["total"] = 0
@@ -78,7 +80,9 @@ class EMTScore:
             + new_s["Ecad only"]
             + new_s["K8+ecad"]
             + new_s["K14"]
+            + new_s["K8"]
             + new_s["Trip+"]
+            + new_s["K8+vim"]
             + new_s["Snail+"]
             + new_s["vim+zeb"]
         )
@@ -96,9 +100,11 @@ class EMTScore:
         coefficients = {
             "Ecad only": config.args.Ecadonly,
             "K8+ecad": config.args.K8ecad,
+            "K8": config.args.K8,
             "K14": config.args.K14,
             "Snail+": config.args.Snail,
             "Trip+": config.args.Trip,
+            "K8+vim": config.args.K8vim,
             "vim only": config.args.vimonly,
             "vim+zeb": config.args.vimzeb,
         }
