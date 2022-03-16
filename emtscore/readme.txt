@@ -125,21 +125,28 @@ Columns required with the same name in the input data:
     --Phenotypes name should be as follow:
     ----"vim only"
     ----"Ecad only"
-    ----"K8+ecad"
+    ----"K8ecad"
+    ----"K8"
     ----"K14"
+    ----"K8vim"
+    ----"K14vim"
     ----"Trip+"
-    ----"Snail+"
-    ----"vim+zeb"
+    ----"Snail"
+    ----"vimzeb"
 --------------------------------------------------------------------------------------------------
 If you need to change markers coefficients you can update them in config.py.
 --parser.add_argument("--Ecadonly", type=int, default=-3) 
 --for example in the above line you can update the default value from -3 to any positive or 
 negative integer number
---parser.add_argument("--K8ecad", type=int, default=-2)
---parser.add_argument("--K14", type=int, default=-1)
---parser.add_argument("--Snail", type=int, default=2)
---parser.add_argument("--Trip", type=int, default=1)
---parser.add_argument("--vimonly", type=int, default=3)
---parser.add_argument("--vimzeb", type=int, default=4)
+parser.add_argument("--Ecadonly", type=int, default=-4)
+parser.add_argument("--K8ecad", type=int, default=-3)
+parser.add_argument("--K8", type=int, default=-2)
+parser.add_argument("--K14", type=int, default=-2)
+parser.add_argument("--Trip", type=int, default=-1)
+parser.add_argument("--K8vim", type=int, default=1)
+parser.add_argument("--K14vim", type=int, default=1)
+parser.add_argument("--Snail", type=int, default=2)
+parser.add_argument("--vimonly", type=int, default=3)
+parser.add_argument("--vimzeb", type=int, default=4)
 save config.py file and Done!
 --------------------------------------------------------------------------------------------------
